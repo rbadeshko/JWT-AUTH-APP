@@ -1,0 +1,15 @@
+.form--add-user {
+    position: relative;
+}
+
+.form__close-button {
+    position: absolute;
+    top: -18px;
+    right: -18px;
+}
+
+.form__close-button {
+}
+
+.form__close-button--white {
+}

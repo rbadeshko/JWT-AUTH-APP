@@ -1,0 +1,62 @@
+.button {
+    height: 2.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--main-blue);
+    border: none;
+    box-shadow: 0px 4px 18px rgba(54, 110, 255, 0.35), inset 0px 1px 0px rgba(255, 255, 255, 0.3);
+    border-radius: 30px;
+    transition: var(--transition);
+    padding: 0 28px;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 0.25rem;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.button:hover {
+    opacity: 0.9;
+}
+.button:active {
+    filter: blur(1px);
+}
+.button__square {
+    border-radius: 2px;
+}
+.button__right-margin {
+    margin-right: 16px;
+}
+.button__cancel {
+    background-color: coral;
+}
+.button__white {
+    background-color: #FFFFFF;
+    box-shadow: 0px 2px 10px rgba(109, 109, 109, 0.25), inset 0px 1px 0px rgba(255, 255, 255, 0.3);
+    color: rgba(0, 0, 0, 0.8);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    padding: 0 28px 0 51px;
+    position: relative;
+    transition: all 0.25s ease-in-out;
+}
+.button__white:hover {
+    transform: translateY(2px);
+}
+.button__white:after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 50%;
+    left: 28px;
+    transform: translateY(-50%);
+    background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11.6267 9.74659L13.3333 8.03992L11.6267 6.33325' stroke='black' stroke-width='1.5' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M6.50665 8.04004H13.2867' stroke='black' stroke-width='1.5' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M7.83999 13.3334C4.89332 13.3334 2.50665 11.3334 2.50665 8.00008C2.50665 4.66675 4.89332 2.66675 7.83999 2.66675' stroke='black' stroke-width='1.5' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+}
+

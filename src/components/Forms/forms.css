@@ -1,0 +1,118 @@
+form {
+    width: 100%;
+}
+.form__header {
+    width: 100%;
+}
+.form {
+    max-width: 413px;
+    width: 100%;
+    padding: 35px 33px 42px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #FFFFFF;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1), -1px -1px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+}
+
+.form__header {
+    text-align: center;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 32px;
+    margin-bottom: 41px;
+}
+.input-block {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 24px;
+    position: relative;
+}
+.input-block--last {
+    margin-bottom: 0 !important;
+}
+.input-block--pass {
+    position: relative;
+}
+.password-eye {
+    position: absolute;
+    bottom: 8px;
+    right: 0;
+    width: 22px;
+    height: 22px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    background-size: 22px 22px;
+    background-image: url("data:image/svg+xml,%3Csvg width='36px' height='36px' viewBox='0 0 36 36' version='1.1' preserveAspectRatio='xMidYMid meet' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3Eeye-hide-line%3C/title%3E%3Cpath d='M25.19 20.4A6.78 6.78 0 0 0 25.62 18a6.86 6.86 0 0 0-6.86-6.86 6.79 6.79 0 0 0-2.37.43L18 13.23a4.78 4.78 0 0 1 .74-.06A4.87 4.87 0 0 1 23.62 18a4.79 4.79 0 0 1-.06.74Z' class='clr-i-outline clr-i-outline-path-1'%3E%3C/path%3E%3Cpath d='M34.29 17.53c-3.37-6.23-9.28-10-15.82-10a16.82 16.82 0 0 0-5.24.85L14.84 10a14.78 14.78 0 0 1 3.63-.47c5.63 0 10.75 3.14 13.8 8.43a17.75 17.75 0 0 1-4.37 5.1l1.42 1.42a19.93 19.93 0 0 0 5-6l.26-.48Z' class='clr-i-outline clr-i-outline-path-2'%3E%3C/path%3E%3Cpath d='M4.87 5.78l4.46 4.46a19.52 19.52 0 0 0-6.69 7.29L2.38 18l.26.48c3.37 6.23 9.28 10 15.82 10a16.93 16.93 0 0 0 7.37-1.69l5 5 1.75-1.5-26-26Zm9.75 9.75 6.65 6.65a4.81 4.81 0 0 1-2.5.72A4.87 4.87 0 0 1 13.9 18 4.81 4.81 0 0 1 14.62 15.53Zm-1.45-1.45a6.85 6.85 0 0 0 9.55 9.55l1.6 1.6a14.91 14.91 0 0 1-5.86 1.2c-5.63 0-10.75-3.14-13.8-8.43a17.29 17.29 0 0 1 6.12-6.3Z' class='clr-i-outline clr-i-outline-path-3'%3E%3C/path%3E%3Crect x='0' y='0' width='36' height='36' fill-opacity='0'/%3E%3C/svg%3E");
+}
+.password-eye__visible {
+    background-image: url("data:image/svg+xml,%3Csvg width='22' height='16' viewBox='0 0 22 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M11 0.5C6 0.5 1.73 3.61 0 8C1.73 12.39 6 15.5 11 15.5C16 15.5 20.27 12.39 22 8C20.27 3.61 16 0.5 11 0.5ZM11 13C8.23997 13 5.99997 10.76 5.99997 8C5.99997 5.24 8.23997 2.99999 11 2.99999C13.76 2.99999 16 5.24 16 8C16 10.76 13.76 13 11 13ZM11 5C9.33997 5 7.99997 6.34 7.99997 8C7.99997 9.66 9.33997 11 11 11C12.66 11 14 9.66 14 8C14 6.34 12.66 5 11 5Z' fill='black'/%3E%3C/svg%3E");
+}
+.label {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    color: #000000;
+    opacity: 0.5;
+}
+.input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--light-gley);
+    padding: 4px 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    outline: none;
+
+}
+.input::placeholder {
+    color: var(--light-gley);
+}
+.form--singin, .form--singup, .user-block, .form--add-user {
+    margin: 60px auto 0;
+}
+
+.button-signin--form {
+    margin: 60px 0 31px;
+}
+.form__have-an-account {
+    text-align: center;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    color: #000000;
+    opacity: 0.5;
+}
+.link-signup {
+    margin-top: 11px;
+    text-align: center;
+    display: block;
+}
+.button-signin--form {
+    border: none;
+    width: 100%;
+}
+
+/*ERRORS BLOCKS*/
+.formik-error-box {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.label-error__red {
+    opacity: 1;
+    color: #DC143C;
+}
+.input-error__red {
+    color: #DC143C;
+    border-bottom: 1px solid #DC143C;
+}
