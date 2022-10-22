@@ -16,7 +16,6 @@ interface FormInputType {
 export const FormInput = (Props: FormInputType) => {
   console.log("render FormInput");
   const { label, style, name, placeholder, type, onChangeHandle, value, error, touch } = Props;
-
   const [isVisiblePass, setIsVisiblePass] = useState<boolean>(false);
 
   const togglePassword = () => {
